@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <title>CALCULATOR</title>sum
+</head>
+<body>
+
+
+A:<input type="number" id="NUM"><br>
+<select id="NUM1">
+    <option value="+">(sum)</option> 
+    <option value="-">(sub)</option> 
+    <option value="*">(mul)</option> 
+    <option value="/">(div)</option> 
+</select><br><br>
+
+B:<input type="number" id="NUM2"><br>
+<button onclick="SUM()">CHECK</button><br>
+
+RESULT:<input type="number"id="RESULT"><br>
+
+<script>
+function SUM(){
+    var a=parseInt(document.getElementById("NUM").value);
+    var b=(document.getElementById("NUM1").value);
+    var c=parseInt(document.getElementById("NUM2").value);
+if(b=='+'){
+    d=a+c;
+  document.getElementById("RESULT").value=a+c;
+}
+  
+
+else if(b=='-'){
+    d=a-c;
+  document.getElementById("RESULT").value=a-c;
+}
+else if(b=='*'){
+    d=a*c;
+  document.getElementById("RESULT").value=a*c;
+}
+
+else if(b=='/'){
+    d=a/c;
+  document.getElementById("RESULT").value=a/c;
+}
+  
+ else{
+    alert("here the output is ")
+ } 
+  
+// alert("hello  "+a+" form is submitted");
+} 
+</script>
+    </body>
+</html> 
+

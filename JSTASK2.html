@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task02</title>
+</head>
+<body>
+    
+        NAME:-        <input type="text" id="NAME"><br><br><br>
+        MIDDLE NAME:- <input type="text" id="MIDDLE NAME" required><br><br><br>
+        LAST NAME:-   <input type="text" id="LAST NAME" ><br><br><br>
+               <button onclick="sum()"> GO </button><br><br>
+        
+
+        INSERTED DATA IS :<br>
+        NAME:-<input type="text" id="ONE"><br>
+        MIDDLE NAME:-<input type="text" id="TWO" ><br><br>
+        LAST NAME:-<input type="text" id="THREE" ><br><br>
+        <button onclick="call()"> done </button>
+        
+    
+        <script>
+        function sum(){
+            var a=document.getElementById("NAME").value;
+            var b=document.getElementById("MIDDLE NAME").value;
+            var c=document.getElementById("LAST NAME").value;
+            var d=document.getElementById("ONE").value=a;
+            var e=document.getElementById("TWO").value=b;
+            var f=document.getElementById("THREE").value=c;
+      
+        }
+        function call(){
+
+            var a=document.getElementById("NAME").value;
+            var b=document.getElementById("MIDDLE NAME").value;
+            var c=document.getElementById("LAST NAME").value;
+
+
+            alert("hello "+a+" "+b+" "+c+" form is submitted");
+        }
+        </script>
+</body>
+</html>

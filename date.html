@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATE</title>
+</head>
+<body>
+    <p id="txyear"></p>
+    <script>
+        const year = new Date();
+        document.getElementById('txyear').innerHTML=year.getFullYear();
+    </script>
+
+    <P id="txtday"></P>
+    <script>
+        const day = new Date();
+        document.getElementById('txtday').innerHTML=year.getDay();
+    </script>
+
+<P id="txttime"></P>
+<script>
+    const time = new Date();
+    document.getElementById('txttime').innerHTML=time;
+</script>
+
+<!-- <p id="txttime"></p>
+<script>
+    var tm = new Date();
+    var hr = tm.getHours();
+    var min =tm.getMinutes ();
+    var sec = tm.getSeconds ();
+    document.getElementById('txttime').innerHTML=hr+':'+min+':'+sec;
+</script> -->
+</body>
+</html>
